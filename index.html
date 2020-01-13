@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DomLinkage Demo</title>
+    <link href="Domx.address.css" rel="stylesheet">
+    <script src="Domx.address.js"></script>
+</head>
+
+<body>
+    <div id="address" style="float: left;"></div>
+    <button id="getadcode" style="height:32px; ">获取当前行政区信息</button>
+    <p id="results"></p>
+    <script>
+        const address = new DomxAddress('#address');
+        document.querySelector('#getadcode').onclick = function () {
+            let curRegion = address.getCurRegion();
+            document.querySelector('#results').innerHTML = JSON.stringify(curRegion);
+        };
+    </script>
+</body>
+
+</html>
