@@ -2,7 +2,7 @@
 
 # new DomxAddress(selector)
 
-描述：实例化一个联动地址选择器。
+描述：实例化一个联动地址选择器。（含数据）
 
 参数说明：
 selector：选择器；
